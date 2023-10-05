@@ -16,6 +16,7 @@ namespace Tyuiu.PomazDS.Sprint2.Task3.V10.Test
             double res = ds.Calculate(x);
             Assert.AreEqual(6.333, res);
         }
+        [TestMethod]
         public void ValidCondition2()
         {
             DataService ds = new DataService();
@@ -23,6 +24,7 @@ namespace Tyuiu.PomazDS.Sprint2.Task3.V10.Test
             double res = ds.Calculate(x);
             Assert.AreEqual(-1, res);
         }
+        [TestMethod]
         public void ValidCondition3()
         {
             DataService ds = new DataService();
@@ -30,6 +32,7 @@ namespace Tyuiu.PomazDS.Sprint2.Task3.V10.Test
             double res = ds.Calculate(x);
             Assert.AreEqual(0.25, res);
         }
+        [TestMethod]
         public void ValidCondition4()
         {
             DataService ds = new DataService();
