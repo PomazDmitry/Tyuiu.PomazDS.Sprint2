@@ -22,9 +22,7 @@ namespace Tyuiu.PomazDS.Sprint2.Task3.V10.Lib
             }
             else if (-14 < x && x < 0)
             {
-                double pow = Math.Pow(x, 2);
-                pow *= -1;
-                return Math.Round(Math.Pow(5.0 + (1.0 / pow), x), 3);
+                return Math.Round(Math.Pow(5.0 + (1.0 / Math.Pow(x,2)), x), 3);
             }
             else
             {
