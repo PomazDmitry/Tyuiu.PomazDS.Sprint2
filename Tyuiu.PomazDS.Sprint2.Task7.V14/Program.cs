@@ -15,10 +15,11 @@ namespace Tyuiu.PomazDS.Sprint2.Task7.V14
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
+            AutoFill ptrn = new AutoFill();
+            ptrn.MainPattern("Добавление к решению итоговых проектов по спринту", 7, 14, "Написать программу на C#, которая запрашивает исходные данные (вещественные значения) и вычисляет, находится ли точка с координатами X,Y в заштрихованной области.");
             double x = double.Parse(Console.ReadLine());
             double y = double.Parse(Console.ReadLine());
-
+            ptrn.ResultPattern();
             Console.WriteLine(ds.CheckDotInShadedArea(x, y));
         }
     }
